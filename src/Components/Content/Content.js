@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import "./Content.css";
 import { Button } from "react-bootstrap";
 
@@ -10,14 +9,7 @@ const Content = () => {
     return inisal[randomNum];
   }
 
-  const handleClick = () => {
-    console.log("Thanks For Subscribe");
-  };
 
-  // pass Arguments to the function
-  const handleClickArgu = (nameOftheSubscriber) => {
-    console.log(`THANKS FOR Subscribe ${nameOftheSubscriber}`);
-  };
 
   // to pass the event to the function
   const handleEvents = (e, name) => {
@@ -27,7 +19,7 @@ const Content = () => {
   // Double Click Events in React JS
 
   const handleDoubleClick = (subscriberName) => {
-    console.log("Thanks For Subscribe Our Website" + `${subscriberName}`);
+    console.log("Thanks For Subscribe Our Website");
   };
 
   // to click the button change the dynamic content without loading the website
@@ -36,7 +28,7 @@ const Content = () => {
     <section>
       <h1 className="contentHeading">Pradeep Raghavan is : {nameChange()}</h1>
       <p
-        onDoubleClick={() => handleDoubleClick("Pradeep")}
+        onDoubleClick={() => handleDoubleClick()}
         className="contentPara"
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
