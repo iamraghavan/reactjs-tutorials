@@ -18,7 +18,7 @@ const Content = () => {
 
   // Double Click Events in React JS
 
-  const handleDoubleClick = (subscriberName) => {
+  const handleDoubleClick = () => {
     console.log("Thanks For Subscribe Our Website");
   };
 
