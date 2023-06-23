@@ -3,9 +3,10 @@ import "./AddItem.css";
 import { Button, Form } from "react-bootstrap";
 import { MdOutlineAddTask } from "react-icons/md";
 import { VscTasklist } from "react-icons/vsc";
-import SearchItem from "../SearchItem/SearchItem";
 
 const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
+
+
   return (
     <div className="">
       <h5 className="mx-5 border border-success text-center pt-2 pb-2 contentParaProps">
@@ -14,13 +15,13 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
 
       <div className="container pt-4">
         <div className="row">
-          <div className="col-lg-6 my-4">
+          <div className="col-lg-12 my-4 text-center">
             <Form onSubmit={handleSubmit}>
               <Form.Group
                 className="mb-3 field"
                 controlId="exampleForm.ControlInput1"
               >
-                <Form.Label>
+                <Form.Label className="text-center formlable">
                   Add Tasks / Works <VscTasklist />
                 </Form.Label>
                 <Form.Control
@@ -43,7 +44,7 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
             </Form>
           </div>
           <div className="col-lg-6 my-4">
-            <SearchItem />
+            
           </div>
         </div>
       </div>

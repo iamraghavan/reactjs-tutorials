@@ -7,9 +7,13 @@ import Hook from "./Components/UseState/Hook";
 import TodoList from "./Components/TodoList/TodoList";
 import Props from "./Components/Props/Props";
 import AddItem from "./Components/AddItem/AddItem";
+import SearchItem from "./Components/SearchItem/SearchItem";
 
 function App() {
   const [newItem, setNewItem] = useState("");
+
+  const [search, setSearch] = useState("");
+
   const addItem = (item) => {
     const id = items.length ? items[items.length - 1].id + 1 : 1;
     const addNewItem = { id, checked: false, item };
@@ -19,7 +23,9 @@ function App() {
     localStorage.setItem("todo_List", JSON.stringify(listItems));
   };
 
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem("todo_List")));
+  const [items, setItems] = useState(
+    JSON.parse(localStorage.getItem("todo_List"))
+  );
 
   let changeEvent = (id) => {
     const listItems = items.map((item) =>
@@ -56,7 +62,14 @@ function App() {
         setNewItem={setNewItem}
         handleSubmit={handleSubmit}
       />
-      <TodoList items={items} deleteBtn={deleteBtn} changeEvent={changeEvent} />
+      <TodoList
+        items={items.filter((item) =>
+          item.item.toLowerCase().includes(search.toLowerCase())
+        )}
+        deleteBtn={deleteBtn}
+        changeEvent={changeEvent}
+      />
+      <SearchItem search={search} setSearch={setSearch} />
       <Props length={items.length} />
     </div>
   );

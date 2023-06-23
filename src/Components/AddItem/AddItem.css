@@ -15,7 +15,7 @@ Form > div > Button {
     width: 8rem;
     height: auto;
     margin: 0px 0px;
-    float: left;
+    float: center;
 }
 
 input[type="submit"] {
@@ -31,4 +31,9 @@ input[type="submit"] {
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+}
+
+.formlable{
+    align-items: center;
+    text-align: center;
 }

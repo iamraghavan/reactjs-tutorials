@@ -14,9 +14,9 @@ const TodoList = ({items, deleteBtn, changeEvent}) => {
           Todo List
         </h5>
       </div>
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
-          <div className="col-lg-6 contentParaColumn text-center my-4">
+          <div className="col-lg-12 contentParaColumn text-center my-4">
             {(items.length) ? (
               <ItemsList items={items} deleteBtn={deleteBtn} changeEvent={changeEvent} />
             ) : (
