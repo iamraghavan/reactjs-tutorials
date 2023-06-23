@@ -1,0 +1,34 @@
+.contentHeading{
+    margin: 20px 0px 0px 20px;
+    font-family: 'Kalam', cursive;
+    font-size: 24px;
+}
+.btnclickEvent{
+    margin: 30px;
+}
+
+.contentPara{
+    margin: 20px 0px 0px 20px;
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+}
+
+.contentParaColumn{
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+}
+
+.contentParaTodoList > h4 {
+    margin: 20px 0px 0px 20px;
+    font-family: 'Kalam', cursive;
+    font-size: 22px;
+}
+
+.contentParaProps{
+    font-family: 'Kalam', cursive;
+    font-size: 22px;
+}
+
+.formMargin{
+    margin: 40px 0px;
+}

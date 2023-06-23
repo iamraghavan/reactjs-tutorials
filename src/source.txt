@@ -1,0 +1,43 @@
+function App() {
+  return (
+    <div>
+      <h1>Hello Raghavan</h1>
+      <p>Let Raghavan is a {nameChange()}</p>
+    </div>
+  );
+}
+
+function nameChange() {
+  const inisal = ["CEO", "Founder", "Developer"];
+  const randomNum = Math.floor(Math.random() * 3);
+  return inisal[randomNum];
+}
+
+----------------------------------------------------------------
+
+Sample Map Method
+
+  const number = [-2,-1,0,1,2]
+  const someItems = number.filter(n => n>=-1).map(n =>({number: n}))
+  console.log(someItems);
+
+
+  ------------------------------------------------------------------
+
+
+     <ul className="ulElement text-left">
+            {items.map((item) => (
+              <li key={item.id}>
+                <input type="checkbox" checked={item.check} />
+                <label>{item.item}</label>
+                <Button className="todoDelBtn" variant="outline-danger">
+                  Delete
+                  <FaTrashAlt
+                    className="todoIcons"
+                    role="button"
+                    tabIndex="0"
+                  />
+                </Button>
+              </li>
+            ))}
+          </ul>

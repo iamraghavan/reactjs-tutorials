@@ -1,0 +1,35 @@
+.todoDelBtn{
+    margin: 2px;
+}
+
+.ulElement > li{
+    padding: 5px 10px;
+    float: left;
+}
+
+.ulElement > li > label{
+    padding: 5px 10px;
+}
+
+.ulElement > li > Button {
+    width: 8rem;
+    height: auto;
+    margin : 0px 25px;
+    float: right;
+}
+
+.todoIcons{
+    padding: 0xp 4%;
+    margin-left: 6px;
+}
+
+.ulElement > li > Button:hover{
+    background-color: #FFCC00;
+    color: #000;
+    border-color: #000;
+}
+
+.listGroup{
+    display: flex;
+    font-size: 20px;
+}
